@@ -9,4 +9,4 @@ CREATE TABLE `login`.`nome` (
   `data_cadastro` DATETIME NOT NULL,
   PRIMARY KEY (`nome`));
 
-INSERT INTO `usuario` (`nome`,`sobrenome`,`email`, `senha`, `data_cadastro`) VALUES ();
+INSERT INTO `usuario` (`nome`,`sobrenome`,`email`, `senha`, `data_cadastro`) VALUES ('Bruno', 'Rocha', 'brunorodriguesra@outlook.com', '12345', '26/03/2020');
