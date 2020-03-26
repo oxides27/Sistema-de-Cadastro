@@ -47,10 +47,15 @@
 
                         <button type="submit" class="button is-block is-link is-large is-fullwidth">Alterar</button>
                         <br>
-                    
+                        </form>
+                        
+                        <form action="listar.php" method="POST">
+
+                        <button type="submit" class="button is-block is-link is-large is-fullwidth">Lista de Cadastro</button>
+                        <br>
                         <div class="notification is-info">
-                        <p>O usuário escolhido já existe. Informe outro e tente novamente.</p>
-                    </div>
+                            <p>O usuário escolhido já existe. Informe outro e tente novamente.</p>
+                        </div>
                         </form>
                     </div>
                 </div>
