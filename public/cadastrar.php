@@ -1,10 +1,10 @@
 <?php
 session_start();
-include("conexao.php");
+include("database/conexao.php");
 
 $nome = mysqli_real_escape_string($conexao, trim($_POST['nome']));
 $usuario = mysqli_real_escape_string($conexao, trim($_POST['sobrenome']));
-$email = mysqli_real_escape_string($conexao, trim($_POST['sobrenome']));
+$email = mysqli_real_escape_string($conexao, trim($_POST['email']));
 $senha = mysqli_real_escape_string($conexao, trim(md5($_POST['senha'])));
 
 $sql = "select count(*) as total from email where sobrenome = '$email'";
