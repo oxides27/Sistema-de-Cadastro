@@ -39,10 +39,19 @@
                                     <input name="senha" class="input is-large" type="password" placeholder="Nova Senha">
                                 </div>
                             </div>
-                            <button type="submit" class="button is-block is-link is-large is-fullwidth">Alterar</button>
-                            <br>
-                            <button type="submit" class="button is-block is-link is-large is-fullwidth">Excluir</button>
-                            
+                            <script language="javascript">
+                                    function alterar(){
+                                    form.action = 'alterar.php';
+                                    form.submit();
+                                    }
+                                    function excluir(){
+                                    form.action = 'excluir.php';
+                                    form.submit();
+                                    }
+                                    </script>
+                                    <input type='button' value='Alterar' class="button is-block is-link is-large is-fullwidth" onclick="alterar()">
+                                    <br>
+                                    <input type='button' value='Excluir' class="button is-block is-link is-large is-fullwidth" onclick="excluir()">
                         </form>
                         <form action="alterar.php" method="POST">
 
@@ -53,3 +62,4 @@
         </div>
     </section>
 </body>
+</html>
