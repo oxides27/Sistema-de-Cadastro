@@ -13,9 +13,9 @@
     $result_usuarios = "SELECT * from usuarios";
     $resultado_usuarios = mysqli_query($conn, $result_usuarios);
     while($row_usuario = mysqli_fetch_assoc($resultado_usuarios)){
-        echo "Nome:" . $row_usuario['id'] . "<br>";
-        echo "Sobrenome:" . $row_usuario['Sobrenome'] . "<br>";
-        echo "Email:" . $row_usuario['Email'] . "<br>";
+        echo "Nome:" . $row_usuario['nome'] . "<br>";
+        echo "Sobrenome:" . $row_usuario['sobrenome'] . "<br>";
+        echo "Email:" . $row_usuario['email'] . "<br>";
     }
     ?>
 </body>
